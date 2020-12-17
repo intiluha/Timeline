@@ -4,6 +4,7 @@ from random import shuffle
 from pregame import *
 from game import *
 from postgame import *
+# TODO all card images should be made the same size
 
 
 def init(tags: List[str]) -> List[Card]:

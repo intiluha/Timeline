@@ -30,6 +30,7 @@ def game(screen: pygame.Surface, players: List[str], permadeath: bool, n_cards: 
     while True:
         screen.fill((255, 255, 255))
 
+        # TODO write current player name
         # draw timeline
         for i, j in enumerate(timeline):
             # compute coordinates of top left corner of picture
@@ -61,6 +62,7 @@ def game(screen: pygame.Surface, players: List[str], permadeath: bool, n_cards: 
             # TODO align better
             name = name_font.render(cards[j].name, True, (0, 0, 0))
             screen.blit(name, (coords[0], coords[1] + name_offset))
+            # TODO show disambiguation for selected card
 
         # update the screen
         pygame.display.update()
@@ -70,7 +72,9 @@ def game(screen: pygame.Surface, players: List[str], permadeath: bool, n_cards: 
             # print(event)
             if event.type == pygame.QUIT:
                 raise SystemExit
+            # TODO scroll timeline
             if event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
+                # process timeline clicks
                 x, y = event.pos
                 if 0.3 * screen.get_height() <= y <= 0.3 * screen.get_height() + card_h:
                     left_border = 0.5 * screen.get_width() - (len(timeline) + 0.5) * card_w
@@ -105,3 +109,5 @@ def game(screen: pygame.Surface, players: List[str], permadeath: bool, n_cards: 
                             selected_card = player_cards[queue[0]][selected]
                             break
                         left_border += 2 * card_w
+
+                # TODO allow selection of cards in hand
