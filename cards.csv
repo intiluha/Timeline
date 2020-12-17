@@ -1,0 +1,20 @@
+card_id,title,year,disambiguation,note,tags
+Fortran,Fortran,1957,First appeared,John Backus,pl
+Lisp,Lisp,1958,First appeared,John McCarthy,pl
+Haskell,Haskell,1990,First appeared,,pl
+Python,Python,1991,First appeared,Guido van Rossum,pl
+Agda,Agda,2007,First appeared (2.0 version),Ulf Norell,pl
+Clojure,Clojure,2007,First appeared,Rich Hickey,pl
+Go,Go,2009,First appeared,,pl
+Scala,Scala,2004,First appeared,Martin Odersky,pl
+OCaml,OCaml,1996,First appeared,,pl
+Racket,Racket,1995,First appeared,,pl
+C++,C++,1985,First appeared,Bjarne Stroustrup,pl
+Lua,Lua,1993,First appeared,,pl
+C,C,1972,First appeared,Dennis Ritchie,pl
+Java,Java,1995,First appeared,,pl
+Ruby,Ruby,1995,First appeared,Yukihiro "Matz" Matsumoto,pl
+Rust,Rust,2010,First appeared,Graydon Hoare,pl
+Julia,Julia,2012,First appeared,,pl
+PHP,PHP,1995,First appeared,Rasmus Lerdorf,pl
+Coq,Coq,1989,First appeared,Thierry Coquand,pl
