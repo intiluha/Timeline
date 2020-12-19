@@ -1,4 +1,6 @@
 from base import *
+import pygame
+from typing import List, Dict
 
 
 def postgame(screen: pygame.Surface, results: Dict[str, int], timeline: List[int], cards: List[Card]) -> bool:

@@ -1,18 +1,20 @@
 # import the pygame module, so you can use it
+import pygame
+import csv
+from typing import List
 from base import *
 from random import shuffle
-from pregame import *
-from game import *
-from postgame import *
+from pregame import pregame
+from game import game
+from postgame import postgame
 # TODO all card images should be made the same size
 
 
 def init(tags: List[str]) -> List[Card]:
-    # TODO tags matching
     with open('cards.csv', newline='') as f:
         f.readline()
         reader = csv.reader(f)
-        cards = [Card(pygame.image.load(os.path.join('img', row[0] + '.png')), *row[1:5]) for row in reader]
+        cards = [Card(*row[:5]) for row in reader if row[5] in tags]
     return cards
 
 

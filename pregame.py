@@ -1,4 +1,6 @@
 from base import *
+import pygame
+from typing import List, Tuple
 
 
 def pregame(surface: pygame.Surface) -> Tuple[List['str'], bool, int, List['str']]:
